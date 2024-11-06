@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+  </head>
+  <style>
+    table,
+    th,
+    td {
+      border: 1.8px solid black;
+      font-size: 2.7px;
+      background-color: transparent;
+    }
+    th,
+    td {
+      padding: 10px;
+      width: 20px;
+      height: 20px;
+      align-items: center; /*Centers the text*/
+      justify-content: center; /*Centers the text*/
+      text-align: center; /*Centers the text*/
+      font-size: calc(510% - 1vw); /* Adjusts size based on viewport */
+      box-sizing: calc(100%);
+      overflow: hidden; /*Prevents the text from wrapping or overflowing out of the circle.*/
+      white-space: nowrap; /*Prevents the text from wrapping or overflowing out of the circle.*/
+    }
+  </style>
+  <body>
+    <table>
+      <tbody>
+        <tr>
+          <!--1 row-->
+          <td style="background-color: red"></td>
+          <td style="background-color: red"></td>
+          <td rowspan="2" colspan="2"></td>
+          <td style="background-color: lightblue; border-radius: 60%"></td>
+          <td style="background-color: lightblue; border-radius: 60%"></td>
+          <td
+            style="
+              background-color: lightblue;
+              border-radius: 60%;
+              color: darkblue;
+            "
+          >
+            <b>START</b>
+          </td>
+          <td rowspan="2" colspan="2"></td>
+          <td style="background-color: blue"></td>
+          <td style="background-color: blue"></td>
+        </tr>
+        <tr>
+          <!--2 row-->
+          <td style="background-color: red"></td>
+          <td style="background-color: red"></td>
+          <td style="background-color: lightblue; border-radius: 60%"></td>
+          <td style="background-color: blue"></td>
+          <td style="background-color: lightblue; border-radius: 60%"></td>
+          <td style="background-color: blue"></td>
+          <td style="background-color: blue"></td>
+        </tr>
+        <tr>
+          <!--3 row-->
+          <td rowspan="2" colspan="4"></td>
+          <td style="background-color: lightblue; border-radius: 60%"></td>
+          <td style="background-color: blue"></td>
+          <td style="background-color: lightblue; border-radius: 60%"></td>
+          <td rowspan="2" colspan="4"></td>
+        </tr>
+        <tr>
+          <!--4 row-->
+          <td style="background-color: lightblue; border-radius: 60%"></td>
+          <td style="background-color: blue"></td>
+          <td style="background-color: lightblue; border-radius: 60%"></td>
+        </tr>
+        <tr>
+          <!--5 row-->
+          <td
+            style="
+              background-color: lightblue;
+              border-radius: 60%;
+              color: darkred;
+            "
+          >
+            <b>START</b>
+          </td>
+          <td style="background-color: lightblue; border-radius: 60%"></td>
+          <td style="background-color: lightblue; border-radius: 60%"></td>
+          <td style="background-color: lightblue; border-radius: 60%"></td>
+          <td style="background-color: lightblue; border-radius: 60%"></td>
+          <td style="background-color: blue"></td>
+          <td style="background-color: lightblue; border-radius: 60%"></td>
+          <td style="background-color: lightblue; border-radius: 60%"></td>
+          <td style="background-color: lightblue; border-radius: 60%"></td>
+          <td style="background-color: lightblue; border-radius: 60%"></td>
+          <td style="background-color: lightblue; border-radius: 60%"></td>
+        </tr>
+        <tr>
+          <!--6 row-->
+          <td style="background-color: lightblue; border-radius: 60%"></td>
+          <td style="background-color: red"></td>
+          <td style="background-color: red"></td>
+          <td style="background-color: red"></td>
+          <td style="background-color: red"></td>
+          <td></td>
+          <td style="background-color: green"></td>
+          <td style="background-color: green"></td>
+          <td style="background-color: green"></td>
+          <td style="background-color: green"></td>
+          <td style="background-color: lightblue; border-radius: 60%"></td>
+        </tr>
+        <tr>
+          <!--7 row-->
+          <td style="background-color: lightblue; border-radius: 60%"></td>
+          <td style="background-color: lightblue; border-radius: 60%"></td>
+          <td style="background-color: lightblue; border-radius: 60%"></td>
+          <td style="background-color: lightblue; border-radius: 60%"></td>
+          <td style="background-color: lightblue; border-radius: 60%"></td>
+          <td style="background-color: yellow"></td>
+          <td style="background-color: lightblue; border-radius: 60%"></td>
+          <td style="background-color: lightblue; border-radius: 60%"></td>
+          <td style="background-color: lightblue; border-radius: 60%"></td>
+          <td style="background-color: lightblue; border-radius: 60%"></td>
+          <td
+            style="
+              background-color: lightblue;
+              border-radius: 60%;
+              color: darkgreen;
+            "
+          >
+            <b>START</b>
+          </td>
+        </tr>
+        <tr>
+          <!--8 row-->
+          <td rowspan="2" colspan="4"></td>
+          <td style="background-color: lightblue; border-radius: 60%"></td>
+          <td style="background-color: yellow"></td>
+          <td style="background-color: lightblue; border-radius: 60%"></td>
+          <td rowspan="2" colspan="4"></td>
+        </tr>
+        <tr>
+          <!--9 row-->
+          <td style="background-color: lightblue; border-radius: 60%"></td>
+          <td style="background-color: yellow"></td>
+          <td style="background-color: lightblue; border-radius: 60%"></td>
+        </tr>
+        <tr>
+          <!--10 row-->
+          <td style="background-color: yellow"></td>
+          <td style="background-color: yellow"></td>
+          <td rowspan="2" colspan="2"></td>
+          <td style="background-color: lightblue; border-radius: 60%"></td>
+          <td style="background-color: yellow"></td>
+          <td style="background-color: lightblue; border-radius: 60%"></td>
+          <td rowspan="2" colspan="2"></td>
+          <td style="background-color: green"></td>
+          <td style="background-color: green"></td>
+        </tr>
+        <tr>
+          <!--11 row-->
+          <td style="background-color: yellow"></td>
+          <td style="background-color: yellow"></td>
+          <td
+            style="
+              background-color: lightblue;
+              border-radius: 60%;
+              color: darkgoldenrod;
+            "
+          >
+            <b>START</b>
+          </td>
+          <td style="background-color: lightblue; border-radius: 60%"></td>
+          <td style="background-color: lightblue; border-radius: 60%"></td>
+          <td style="background-color: green"></td>
+          <td style="background-color: green"></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
