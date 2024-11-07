@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+  </head>
+  <body>
+    <h1>Dado Tea Lunch Special</h1>
+    <p>
+      <b>
+        Monday through Friday <br />
+        11am ~ 3pm <br />$9.95 <small>(plus tax) </small>
+      </b>
+    </p>
+    <p>Includes sandwich, snack and drink.</p>
+    <form action="">
+      <fieldset>
+        <legend>Order Information</legend>
+        <label for="name"> <b>Name</b></label>
+        <br />
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Your name"
+          required
+        />
+        <br />
+        <input type="radio" name="order" id="here" required />
+        <label for="here">Here</label>
+        <br />
+        <input type="radio" name="order" id="togo" required />
+        <label for="togo">To go</label>
+      </fieldset>
+      <fieldset>
+        <legend>Sandwiches</legend>
+        <label><b>Monday</b></label>
+        <br />
+        <input type="radio" name="monday" id="food01" />
+        <label for="food01">Tomato Mozzarella</label>
+        <br />
+        <input type="radio" name="monday" id="food02" />
+        <label for="food02">Chicken Salad</label>
+        <br />
+        <label><b>Tuesday</b></label>
+        <br />
+        <input type="radio" name="tuesday" id="food03" />
+        <label for="food03">Greek Salad Wrap</label>
+        <br />
+        <input type="radio" name="tuesday" id="food04" />
+        <label for="food04">Toto Wrap</label>
+        <br />
+        <label><b>Wednesday</b></label>
+        <br />
+        <input type="radio" name="wednesday" id="food05" />
+        <label for="food05">Red Pepper Hummus</label>
+        <br />
+        <input type="radio" name="wednesday" id="food06" />
+        <label for="food06">Roasted Turkey</label>
+        <br />
+        <label><b>Thursday</b></label>
+        <br />
+        <input type="radio" name="thursday" id="food07" />
+        <label for="food07">Carrot-Ginger Hummus Wrap</label>
+        <br />
+        <input type="radio" name="thursday" id="food08" />
+        <label for="food08">Egg Salad</label>
+        <br />
+        <label><b>Friday</b></label>
+        <br />
+        <input type="radio" name="friday" id="food09" />
+        <label for="food09">Dado Wrap</label>
+        <br />
+        <input type="radio" name="friday" id="food10" />
+        <label for="food10">Tuna Salad</label>
+        <hr />
+        <input type="checkbox" name="bread" id="bread" />
+        <label for="bread">Gluten Free Bread <small>(75¢ extra)</small></label>
+      </fieldset>
+      <fieldset>
+        <legend>Snack</legend>
+        <label><b>Snacks</b></label>
+        <br />
+        <input type="radio" name="snack" id="apple" />
+        <label for="apple">Apple</label>
+        <br />
+        <input type="radio" name="snack" id="banana" />
+        <label for="banana">Banana</label>
+        <br />
+        <input type="radio" name="snack" id="potatoChips" />
+        <label for="potatoChips">Potato Chips</label>
+      </fieldset>
+      <fieldset>
+        <legend>Drink</legend>
+        <label><b>Drinks</b></label>
+        <br />
+        <select name="drink" id="drink">
+          <option value="" selected disabled>Select your drink</option>
+          <option value="coffee">Coffee</option>
+          <option value="icedCoffee">Iced Coffee</option>
+          <option value="peppermint">Organic Peppermint</option>
+          <option value="hotGreenTea">Hot Sencha Green Tea</option>
+          <option value="icedGreenTea">Iced Sencha Green Tea</option>
+          <option value="hotBlackTea">Hot Keemun Black Tea</option>
+          <option value="icedBlackTea">Iced Keemun Black Tea</option>
+        </select>
+        <hr />
+        <input type="checkbox" name="extra" id="largeDrink" />
+        <label for="largeDrink">Large Drink <small>(75¢ extra)</small></label>
+      </fieldset>
+      <br />
+      <input type="submit" name="order" id="order" value="Place Order" />
+      <label for="order"></label>
+    </form>
+  </body>
+</html>
