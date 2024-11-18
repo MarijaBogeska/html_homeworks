@@ -1,0 +1,127 @@
+@font-face {
+  font-family: "lora";
+  src: url(../fonts/Lora-Medium.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "lora";
+  font-weight: 800;
+}
+.background {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url(https://images.alphacoders.com/134/thumb-1920-1342197.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+nav {
+  width: 70%;
+  margin: auto;
+  padding: 20px 0;
+  display: flex;
+  align-items: centar;
+  justify-content: space-between;
+}
+nav > ul,
+li {
+  list-style: none;
+  display: inline-block;
+  align-items: center;
+  margin: 0 20px;
+  position: relativ;
+}
+nav > ul > li > a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #d58936;
+  font-size: 15px;
+}
+h1 {
+  text-align: center;
+  color: #f8f3f4;
+  text-align: center;
+  font-size: 25px;
+  padding-bottom: 20px;
+  padding-top: 50px;
+  text-decoration-line: underline;
+  text-underline-offset: 5px;
+}
+#h1-welcome {
+  font-size: 19px;
+  display: block;
+}
+#logo {
+  font-family: "Bangers", system-ui;
+  font-weight: 400;
+  font-size: 20px;
+  text-decoration: wavy;
+  font-style: normal;
+  color: rgb(252, 151, 1);
+  text-shadow: 4px 4px 2px rgba(29, 28, 28, 0.753);
+  margin: 0;
+}
+.nav-links a:hover {
+  color: #f8f3f4;
+}
+h3 {
+  text-align: center;
+  color: #d58936;
+  text-align: center;
+  font-size: 18px;
+  padding: 10px 0px;
+}
+main{
+  padding-bottom:100px ;
+}
+main p {
+  text-align: center;
+  color: #f8f3f4;
+  font-size: 15px;
+  font-weight: 300;
+  padding: 10px 200px;
+}
+main p::first-letter {
+  font-size: larger;
+  color: rgb(252, 151, 1);
+}
+footer {
+  display: grid;
+  background-color: black;
+  padding: 5px 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+footer h4 {
+  color: rgb(252, 151, 1);
+  font-weight: 500;
+  text-align: center;
+}
+.links {
+  list-style: none;
+  text-decoration: none;
+  color: #f8f3f4;
+  font-weight: 500;
+  font-size: 13px;
+  padding: 0px 98px;
+  text-shadow: 2px 2px 0px rgba(252, 151, 1, 0.8);
+}
+.links:hover {
+  color: #801912;
+}
+#copyright {
+  font-style: italic;
+  font-size: smaller;
+  color: #d3c2af;
+  text-align: center;
+}
+#copyright::first-letter {
+  font-size: larger;
+  color: rgb(252, 151, 1);
+}
+#author {
+  font-size: smaller;
+  color: #d3c2af;
+  text-align: center;
+}
