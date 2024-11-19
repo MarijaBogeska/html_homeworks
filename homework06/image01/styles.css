@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.relative-position {
+  position: relative;
+  height: 500px;
+  width: 500px;
+  border: 3px solid black;
+  margin: 10px;
+}
+.red-box {
+  position: absolute;
+  box-sizing: inherit;
+  width: 400px;
+  height: 400px;
+  background-color: red;
+  border-bottom: 5px solid black;
+  border-left: 5px solid black;
+  right: 0px;
+}
+.white-top {
+  position: relative;
+  width: 95px;
+  height: 150px;
+  border-bottom: 10px solid black;
+}
+.white-left {
+  position: absolute;
+  width: 95px;
+  height: 250px;
+  border-bottom: 5px solid black;
+  bottom: 94px;
+  left: 0px;
+}
+.blue-box {
+  position: absolute;
+  width: 100px;
+  height: 94px;
+  background-color: blue;
+  border-right: 5px solid black;
+  bottom: 0px;
+  left: 0px;
+}
+.white-bottom {
+  position: absolute;
+  width: 365px;
+  height: 94px;
+  border-right: 5px solid black;
+  bottom: 0px;
+  left: 100px;
+}
+.white-right {
+  position: absolute;
+  box-sizing: inherit;
+  width: 30px;
+  height: 55px;
+  bottom: 40px;
+  border-bottom: 15px solid black;
+  left: 465px;
+}
+.yellow-box {
+  position: absolute;
+  box-sizing: inherit;
+  width: 30px;
+  height: 40px;
+  background-color: yellow;
+  bottom: 0px;
+  left: 465px;
+}
