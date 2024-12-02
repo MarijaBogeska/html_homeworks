@@ -1,0 +1,316 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+@keyframes slide-in {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+nav {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  padding: 20px 0;
+  & ul {
+    display: flex;
+    justify-content: center;
+    & li {
+      list-style: none;
+      padding: 0 15px;
+      & a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: antiquewhite;
+        
+        font-size: 15px;
+        text-shadow: 1px 2px 2px rgba(63, 231, 209, 0.856);
+      }
+      & form {
+        & #search {
+          border: 1px solid rgb(255, 255, 255);
+          border-radius: 5px;
+          background-color: transparent;
+          color: white;
+          & ::placeholder {
+            color: #e7e7e7a6;
+          }
+        }
+        & .search-button {
+          background-color: transparent;
+          border: none;
+          color: white;
+          cursor: pointer;
+          margin-top: 0;
+        }
+      }
+    }
+  }
+  animation: slide-in 2s ease;
+}
+@keyframes slide {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+main {
+  z-index: 0;
+  & .movie-section {
+    display: grid;
+    grid-template-areas:
+      "background-poster"
+      "cards"
+      "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    height: 100vh;
+    & .background-poster {
+      grid-area: background-poster;
+      background-color: red;
+      height: 600px;
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.514),
+          rgba(0, 0, 0, 0.75)
+        ),
+        url(./images/poster1.jpg);
+      width: 100%;
+      height: 800px;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      & .poster {
+        background-image: url(./images/poster1.jpg);
+        border: 1px solid white;
+        width: 80%;
+        height: 80%;
+        background-size: cover;
+        & .description {
+          margin-top: 400px;
+          & #poster-title {
+            font-size: 50px;
+            color: aliceblue;
+            margin: 10px 20px;
+          }
+          & p {
+            color: aliceblue;
+            margin: 10px 20px;
+          }
+          & #button-trailer {
+            cursor: pointer;
+            padding: 10px;
+            border: 1px solid white;
+            border-radius: 8px;
+            margin: 10px 20px;
+            color: aliceblue;
+            background-color: transparent;
+            transition: transform 0.3s ease, color 0.3s ease-in;
+          }
+          & #button-trailer:hover {
+            transform: scale(1.1);
+            color: grey;
+          }
+        }
+        animation: slide 2s ease;
+      }
+    }
+    & .cards {
+      grid-area: cards;
+      background-color: rgba(0, 0, 0, 0.966);
+      display: grid;
+      height: auto;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      justify-items: center;
+      gap: 30px;
+      & .card {
+        margin: 50px;
+        margin-bottom: 200px;
+        width: 250px;
+        height: 400px;
+        background-color: rgba(169, 169, 169, 0.651);
+        border: 1px solid bisque;
+        border-radius: 10px;
+        position: relative;
+        & .des-card {
+          background-color: transparent;
+          border-radius: 10px;
+          width: 250px;
+          height: 200px;
+          position: absolute;
+          top: 400px;
+          color: white;
+          & .checked {
+            color: orange;
+          }
+          & h2 {
+            & .release-year {
+              font-size: 15px;
+            }
+            & small {
+              font-size: 18px;
+            }
+          }
+          & .genre {
+            padding: 5px 0;
+            font-size: 18px;
+            & a {
+              & .button-genre {
+                padding: 2px;
+                border: 1px solid white;
+                border-radius: 5px;
+                color: aliceblue;
+                background-color: transparent;
+              }
+            }
+          }
+          & .links {
+            margin: 15px 0;
+            display: flex;
+            gap: 20px;
+            justify-content: left;
+            & .button-link {
+              cursor: pointer;
+              padding: 10px;
+              border: 1px solid white;
+              border-radius: 8px;
+              color: aliceblue;
+              background-color: transparent;
+              transition: transform 0.3s ease, color 0.3s ease-in;
+            }
+            & .button-link:hover {
+              transform: scale(1.1);
+              color: grey;
+            }
+          }
+        }
+      }
+      & #movie01 {
+        background-image: url(https://dx35vtwkllhj9.cloudfront.net/universalstudios/wicked/images/regions/us/onesheet-synopsis.jpg);
+        background-size: cover;
+      }
+      & #movie02 {
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE96-ST9y3L5F18IFNnTPV3aEyUAEvxpUIUA&s);
+        background-size: cover;
+      }
+      & #movie03 {
+        background-image: url(https://m.media-amazon.com/images/M/MV5BZmFkMjE4NjQtZTVmZS00MDZjLWE2ZmEtZTkzODljNjhlNWUxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg);
+        background-size: cover;
+      }
+      & #movie04 {
+        background-image: url(https://m.media-amazon.com/images/M/MV5BYWQ4YmNjYjEtOWE1Zi00Y2U4LWI4NTAtMTU0MjkxNWQ1ZmJiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg);
+        background-size: cover;
+      }
+      & #movie05 {
+        background-image: url(https://m.media-amazon.com/images/M/MV5BZTBhN2RlZjEtZTcyOC00YTU3LTgyNWItM2QzOGI5YzdkMzdlXkEyXkFqcGc@._V1_.jpg);
+        background-size: cover;
+      }
+      & #movie06 {
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpyfJvcWbRh-CQ1dfYMbpB9mIlVpBPxXtTVw&s);
+        background-size: cover;
+      }
+    }
+    & footer {
+      grid-area: footer;
+      height: auto;
+      width: 100%;
+      bottom: 0px;
+      background-color: rgb(0, 0, 0);
+      & .social-media {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        & .fa {
+          padding: 5px;
+          font-size: 18px;
+          width: 30px;
+          height: 30px;
+          text-align: center;
+          text-decoration: none;
+          margin: 10px 2px;
+          border-radius: 50%;
+          & .fa:hover {
+            opacity: 0.7;
+          }
+        }
+        & .fa-youtube {
+          background: #bb0000;
+          color: white;
+          transition: background 0.3s ease, transform 0.3s ease;
+        }
+        & .fa-youtube:hover {
+          background: #580000;
+          transform: scale(1.5);
+        }
+
+        & .fa-instagram {
+          background: #125688;
+          color: white;
+          transition: background 0.3s ease, transform 0.3s ease;
+        }
+        & .fa-instagram:hover {
+          background: #072438;
+          transform: scale(1.5);
+        }
+
+        & .fa-pinterest {
+          background: #cb2027;
+          color: white;
+          transition: background 0.3s ease, transform 0.3s ease;
+        }
+        & .fa-pinterest:hover {
+          background: #7e1417;
+          transform: scale(1.5);
+        }
+        & .fa-facebook {
+          background: #3b5998;
+          color: white;
+          transition: background 0.3s ease, transform 0.3s ease;
+        }
+        & .fa-facebook:hover {
+          background: #0d1d41;
+          transform: scale(1.5);
+        }
+      }
+      .copy-right {
+        font-size: smaller;
+        color: white;
+        text-align: center;
+      }
+      .copy-right::first-letter {
+        color: orange;
+      }
+      & .streaming-platforms {
+        display: flex;
+        justify-content: center;
+        margin: 15px;
+
+        & .button-platform {
+          cursor: pointer;
+          background-color: black;
+          color: #bb0000;
+          border: 1px solid whitesmoke;
+          border-radius: 5px;
+          padding: 3px;
+          transition: scale 0.3s ease-out;
+        }
+        & .button-platform:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+}
